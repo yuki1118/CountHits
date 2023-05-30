@@ -15,12 +15,12 @@ struct ContentView: View {
                 Image(systemName: "globe")
                     .imageScale(.large)
                     .foregroundColor(.accentColor)
-                Text("Hello, world!")
+                Text("Hello, world!")	
                     .font(.largeTitle)
                     .foregroundColor(Color.red)
-                Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-                    
-                }
+                NavigationLink(destination: setting().navigationTitle("画面2")) {
+                            Text("SecondViewへ")
+                        }
                 
             }
         }
