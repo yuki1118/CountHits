@@ -12,13 +12,22 @@ struct ContentView: View {
         //画面遷移
         NavigationView {
             VStack {
+                // カウント数を表示
+
+                // ボタン表示
+
+                // 設定画面のアイコンを表示
+
+
+
+
                 Image(systemName: "globe")
                     .imageScale(.large)
                     .foregroundColor(.accentColor)
                 Text("Hello, world!")	
                     .font(.largeTitle)
                     .foregroundColor(Color.red)
-                NavigationLink(destination: setting().navigationTitle("画面2")) {
+                NavigationLink(destination: SettingView().navigationTitle("画面2")) {
                             Text("SecondViewへ")
                         }
                 
